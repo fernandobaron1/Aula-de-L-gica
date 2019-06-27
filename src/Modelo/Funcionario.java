@@ -10,7 +10,7 @@ public class Funcionario {
     private int tempServico;
     public boolean getNome;
     
-    public String getNone() {
+    public String getNome() {
         return this.nome;
         
     }
@@ -26,11 +26,11 @@ public class Funcionario {
         this.salario = salario;
     }
 
-    public int getCodcargo() {
+    public int getCodCargo() {
         return codcargo;
     }
 
-    public void setCodcargo(int codcargo) {
+    public void setCodCargo(int codcargo) {
         this.codcargo = codcargo;
     }
 
@@ -42,8 +42,9 @@ public class Funcionario {
         this.tempServico = tempServico;
     }
 
-    public int getcodCargo() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
     
 }
+    
+    
+

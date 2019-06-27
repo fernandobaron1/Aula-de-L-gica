@@ -13,7 +13,7 @@ public class AumentoSalarial {
     }
     public double calcularAumento() {
         double novoSalario = 0;
-        int codCargo = this.func.getcodCargo();
+        int codCargo = this.func.getCodCargo();
         
         if (codCargo == 101) {
             novoSalario = this.calcGerente();
