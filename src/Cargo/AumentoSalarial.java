@@ -17,12 +17,33 @@ public class AumentoSalarial {
     private double calcGerente() {
         
         int tempo = this.func.getTempServico(); 
+        double percentual = 0;
         
-        if ()
+        if (tempo >= 1 & tempo < 2) {
+        percentual = 10;
+    } else if (tempo <= 3) {
+            percentual = 20;
+    } else {
+            percentual = 25;
+            }
+    double salario = this.func.getSalario();
+    
+    double novoSalario = (salario * percentual) / 100;
+    novoSalario = salario + novoSalario;
         
-        return 0;
+        return novoSalario;
     }
     private double calcGeral() {
+        int tempo = this.func.getTempServico();
+        double percentual = 0;
+        
+        if (tempo >=3) {
+            percentual =35;
+        }
+        double salario = this.func.getSalario();
+        
+        double novoSalario = (salario * percentual)/100;
+        novoSalario = salario + novoSalario;
         return 0;
     }
 }

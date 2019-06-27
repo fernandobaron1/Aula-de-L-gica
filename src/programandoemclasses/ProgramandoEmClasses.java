@@ -11,6 +11,7 @@ public class ProgramandoEmClasses {
    Funcionario f = new Funcionario();
    f.setNome ("Fernando");
    System.out.println(f.getNome);
+   System.out.println(novoSalario);
    
    
     }

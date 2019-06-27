@@ -8,6 +8,7 @@ public class Funcionario {
     private double salario;
     private int codcargo;
     private int tempServico;
+    public boolean getNome;
     
     public String getNone() {
         return this.nome;
