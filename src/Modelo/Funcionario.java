@@ -41,5 +41,9 @@ public class Funcionario {
     public void setTempServico(int tempServico) {
         this.tempServico = tempServico;
     }
+
+    public int getcodCargo() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

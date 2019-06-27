@@ -12,7 +12,19 @@ public class AumentoSalarial {
         this.func = func;
     }
     public double calcularAumento() {
-        return 0;
+        double novoSalario = 0;
+        int codCargo = this.func.getcodCargo();
+        
+        if (codCargo == 101) {
+            novoSalario = this.calcGerente();
+        } else if (codCargo == 102) {
+            novoSalario = this.calcEngenheiro();
+        } else if (codCargo ==103) {
+            novoSalario = this.calcTecnico();
+        } else {
+            novoSalario = this.calcGeral();
+        }
+        return novoSalario;
     }
     private double calcGerente() {
         
