@@ -20,7 +20,10 @@ public class ProgramandoEmClasses {
         double novoSalario = a.calcularAumento();
         
         System.out.println (novoSalario);
-        System.out.println (getNome);
+        
+        String nome = f.getNome();
+        
+        System.out.println(nome);
    
    
    
