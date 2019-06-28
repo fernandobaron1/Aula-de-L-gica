@@ -5,6 +5,8 @@
  */
 package programandoemclasses;
 
+import Cargo.AumentoSalarial;
+import Modelo.Funcionario;
 import javax.swing.JOptionPane;
 
 /**
@@ -159,6 +161,15 @@ public class InterfaceCalcSalario extends javax.swing.JFrame {
        
        int tempoServico =
                Integer.parseInt(cpTempoServico.getText());
+       
+       Funcionario f = new Funcionario();
+       f.setNome(nome);
+       f.setSalario (salario);
+       f.setCodCargo (codCargo);
+       f.setTempServico (tempoServico);
+       
+       AumentoSalarial s = new AumentoSalarial(f);
+       double novoSalario = s.calcularAumento();
     }//GEN-LAST:event_btCalcularActionPerformed
 
     /**
