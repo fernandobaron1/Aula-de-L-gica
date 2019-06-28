@@ -170,6 +170,9 @@ public class InterfaceCalcSalario extends javax.swing.JFrame {
        
        AumentoSalarial s = new AumentoSalarial(f);
        double novoSalario = s.calcularAumento();
+       
+       labelResultadoSalario.setText(""+novoSalario);
+       labelResultadoDiferenca.setText(""+(novoSalario - f.getSalario()));
     }//GEN-LAST:event_btCalcularActionPerformed
 
     /**
