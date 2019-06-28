@@ -24,25 +24,36 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="cpNome" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="jSeparator1" max="32767" attributes="0"/>
+                  <Component id="cpNome" alignment="0" max="32767" attributes="0"/>
                   <Component id="cpSalario" alignment="0" max="32767" attributes="0"/>
                   <Component id="cpCodigoCargo" alignment="0" max="32767" attributes="0"/>
-                  <Group type="102" attributes="0">
+                  <Component id="cpTempoServico" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="btCalcular" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="labelNome" min="-2" max="-2" attributes="0"/>
                           <Component id="labelSalario" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="labelCodigoCargo" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="labelTempoServico" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="labelNovoSalario" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="labelResultadoSalario" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="labelDiferenca" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="labelResultadoDiferenca" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace min="0" pref="176" max="32767" attributes="0"/>
-                  </Group>
-                  <Component id="cpTempoServico" alignment="0" max="32767" attributes="0"/>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="btCalcular" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="146" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -70,7 +81,19 @@
               <Component id="cpTempoServico" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="btCalcular" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="34" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="labelNovoSalario" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="labelResultadoSalario" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="labelDiferenca" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="labelResultadoDiferenca" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="83" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -114,6 +137,28 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btCalcularActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JSeparator" name="jSeparator1">
+    </Component>
+    <Component class="javax.swing.JLabel" name="labelNovoSalario">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Novo Sal&#xe1;rio:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="labelResultadoSalario">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="(resultado sal&#xe1;rio)"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="labelDiferenca">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Diferen&#xe7;a:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="labelResultadoDiferenca">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="(resultado diferen&#xe7;a)"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
