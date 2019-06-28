@@ -51,11 +51,11 @@ public class AumentoSalarial {
         double percentual = 0;
         
         if (tempo >= 1 & tempo < 2) {
-        percentual = 10;
+        percentual = 15;
     } else if (tempo <= 3) {
-            percentual = 20;
+            percentual = 30;
     } else {
-            percentual = 25;
+            percentual = 35;
             }
     double salario = this.func.getSalario();
     
@@ -70,11 +70,11 @@ public class AumentoSalarial {
         double percentual = 0;
         
         if (tempo >= 1 & tempo < 2) {
-        percentual = 10;
+        percentual = 5;
     } else if (tempo <= 3) {
-            percentual = 20;
+            percentual = 10;
     } else {
-            percentual = 25;
+            percentual = 15;
             }
     double salario = this.func.getSalario();
     
